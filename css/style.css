@@ -6,7 +6,7 @@
         url('../fonts/Poppins-Regular.woff') format('woff'),
         url('../fonts/Poppins-Regular.ttf') format('truetype'),
         url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -14,6 +14,8 @@
 * {
     margin: 0px;
     padding: 0px; 
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 header {
@@ -43,7 +45,6 @@ header nav ul {
 }
 
 header nav ul li {
-font-family: 'Poppins';
 font-size: 15px;
 font-style: normal;
 font-weight: 400;
@@ -96,9 +97,6 @@ color: #000000;
 }
 
 .main_banner h3 {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 color: #C0C0C0;
@@ -107,18 +105,12 @@ text-transform: uppercase;
 }
 
 .main_banner h1 {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
 font-size: 54px;
 line-height: 59px;
 color: #FFFFFF;
 }
 
 .main_banner p {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 color: #C0C0C0;
@@ -133,9 +125,6 @@ color: #C0C0C0;
 
 .components li {
     margin: 16px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 12px;
     color: #FFFFFF;
@@ -167,176 +156,103 @@ color: #C0C0C0;
     width: 10px;
 }
 
-.second_banner {
+.sunset_section {
     background-image: url(../images/mountain_background.jpg);
     background-size: cover;
-    height: 75vh;
+    height: 80vh;
+    position: relative;
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
-.second_banner h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.banner article {
+    display: block;
+    max-width: 300px;
+    margin-right: 87px;
+}
+
+
+.banner h3 {
     font-size: 14px;
-    line-height: 20px;
+    color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
-.second_banner p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.banner p {
     font-size: 14px;
-    line-height: 20px;
     color: #C0C0C0;
-    max-width: 298px;
+    line-height: 20px
 }
 
-.second_banner .components {
-    position: relative;
-    top: 324px
-}
-
-.third_banner {
+.monstera_section {
     background-image: url(../images/leaves_background.jpg);
     background-size: cover;
-    height: 75vh;
+    height: 80vh;
+    position: relative;
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
-.third_banner h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.third_banner p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #C0C0C0;
-    max-width: 298px;
-}
-
-.third_banner .components {
+.star_section {
+    background-image: url(../images/himalayas_backgroud.jpg);
+    background-size: cover;
+    height: 80vh;
     position: relative;
-    top: 324px
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
-.fourth_banner {
+.past_clients_section {
     background-color: #000000;
-    padding-top: 115px;
-    padding-bottom: 169px;
-    padding-left: 182px;
-    padding-right: 182px;
+    padding: 115px 182px 169px;
     text-align: center;
 }
 
-.fourth_banner h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.past_clients_section h3 {
     font-size: 40px;
     line-height: 42px; 
     color: #FFFFFF;
 }
 
-.fourth_banner h4 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.past_clients_section h4 {
     font-size: 24px;
     line-height: 30px;
     color: #C0C0C0;
     margin-bottom: 111px;
 }
 
-.fourth_banner div {
+.past_clients_section div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.fifth_banner {
-    background-image: url(../images/himalayas_backgroud.jpg);
-    background-size: cover;
-    height: 75vh;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.fifth_banner h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.fifth_banner p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #C0C0C0;
-    max-width: 298px;
-}
-
-.fifth_banner .components {
-    position: relative;
-    top: 324px
-}
-
-
-.sixth_banner {
+.need_help_section {
     background-color: #000000;
     text-align: center;
     padding-top: 113px;
     padding-bottom: 108px;
 }
 
-.sixth_banner h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.need_help_section h3 {
     font-size: 40px;
     line-height: 42px;
     color: #FFFFFF;
+    margin-bottom: 15px;
 }
 
-.sixth_banner h4 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.need_help_section h4 {
     font-size: 24px;
     line-height: 30px;
     color: #C0C0C0;
+    margin-bottom: 22px;
 }
 
-.sixth_banner p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.need_help_section p {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -347,15 +263,14 @@ color: #C0C0C0;
     padding-bottom: 10px;
     padding-left: 11px;
     padding-right: 11px;
-    
 }
 
-.sixth_banner p a {
+.need_help_section p a {
     color: #000000;
     text-decoration: none;
 }
 
-.sixth_banner p::before {
+.need_help_section p::before {
     content: "";
     display: inline-block;
     background-image: url(../images/circle.svg); 
@@ -365,4 +280,3 @@ color: #C0C0C0;
     position: relative;
     top: 8px;
  }
- 
