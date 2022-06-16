@@ -30,7 +30,7 @@ height: 31px;
 .container {
 max-width: 1168px;
 margin: auto;
-
+flex-wrap:wrap;   
 }
 
 header .container {
@@ -108,12 +108,15 @@ text-transform: uppercase;
 font-size: 54px;
 line-height: 59px;
 color: #FFFFFF;
+margin-bottom: 18px;
+margin-top: 0;
 }
 
 .main_banner p {
 font-size: 14px;
 line-height: 20px;
 color: #C0C0C0;
+margin-bottom: 20px;
 }
 
 .components {
@@ -125,7 +128,7 @@ color: #C0C0C0;
 
 .components li {
     margin: 16px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 12px;
     color: #FFFFFF;
     list-style: none;
@@ -208,14 +211,25 @@ color: #C0C0C0;
 
 .past_clients_section {
     background-color: #000000;
-    padding: 115px 182px 169px;
+    padding: 113px 0 140px;
     text-align: center;
+}
+
+.past_clients_section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners_logo {
+    width: 128px;
 }
 
 .past_clients_section h3 {
     font-size: 40px;
     line-height: 42px; 
     color: #FFFFFF;
+    margin-bottom: 15px;
 }
 
 .past_clients_section h4 {
@@ -223,12 +237,6 @@ color: #C0C0C0;
     line-height: 30px;
     color: #C0C0C0;
     margin-bottom: 111px;
-}
-
-.past_clients_section div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .need_help_section {
