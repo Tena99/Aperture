@@ -1,290 +1,245 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Regular.eot');
-    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-Regular.woff2') format('woff2'),
-        url('../fonts/Poppins-Regular.woff') format('woff'),
-        url('../fonts/Poppins-Regular.ttf') format('truetype'),
-        url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff"),
+    url("../fonts/Poppins-Regular.ttf") format("truetype"),
+    url("../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
-    margin: 0px;
-    padding: 0px; 
-    font-family: 'Poppins';
-    font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 header {
-    background-color: black;
-    padding: 24px 0;
+  background-color: black;
+  padding: 45px 0;
 }
 
 .logo {
-height: 31px;
+  height: 31px;
 }
 
 .container {
-max-width: 1168px;
-margin: auto;
-flex-wrap:wrap;   
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav ul {
-    display: flex;
-    align-items: center;
-}
-
-header nav ul li {
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-list-style: none;
-
-}
-
-header nav ul li a {
-color: white;
-text-decoration: none;
-display: inline-block;
-margin-left: 32px
-}
-
-header nav ul li:first-of-type{
-    margin-right: 24px;
-    font-size: 13px;
-}
-
-header nav ul li:last-of-type a {
-margin-left: 31px;
-padding: 11px 20px;
-background-color: white;
-border-radius: 14px;
-font-family: 'Poppins';
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0.4px;
-color: #000000;
+  max-width: 1168px;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 /*Main banner section*/
 
 .main_banner {
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    height: 84vh;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 71px;
-    position: relative;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 71px;
+  position: relative;
 }
 
 .main_banner .container {
-    max-width: 580px;
-    margin: inherit;
-    text-align: center;
+  max-width: 580px;
+  margin: inherit;
+  text-align: center;
 }
 
 .main_banner h3 {
-font-size: 14px;
-line-height: 20px;
-color: #C0C0C0;
-letter-spacing: 2px;
-text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #c0c0c0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .main_banner h1 {
-font-size: 54px;
-line-height: 59px;
-color: #FFFFFF;
-margin-bottom: 18px;
-margin-top: 0;
+  font-size: 54px;
+  line-height: 59px;
+  color: #ffffff;
+  margin-bottom: 18px;
+  margin-top: 0;
 }
 
 .main_banner p {
-font-size: 14px;
-line-height: 20px;
-color: #C0C0C0;
-margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #c0c0c0;
+  margin-bottom: 20px;
 }
 
 .components {
-    display: flex;
-    position: absolute;
-    right: 40px;
-    bottom: 41px;
+  display: flex;
+  position: absolute;
+  right: 40px;
+  bottom: 41px;
 }
 
 .components li {
-    margin: 16px;
-    font-size: 10px;
-    line-height: 12px;
-    color: #FFFFFF;
-    list-style: none;
+  margin: 16px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+  list-style: none;
 }
 
 .components li::before {
-   content: "";
-   display: inline-block;
-   background-image: url(../images/clock_icon.svg); 
-   height: 16px;
-   width: 16px;
-   margin-right: 6px;
-   position: relative;
-   top: 6px;
+  content: "";
+  display: inline-block;
+  background-image: url(../images/clock_icon.svg);
+  height: 16px;
+  width: 16px;
+  margin-right: 6px;
+  position: relative;
+  top: 6px;
 }
 
 .components li:nth-child(2)::before {
-    background-image: url(../images/round_icon.svg);
+  background-image: url(../images/round_icon.svg);
 }
 
 .components li:nth-child(3)::before {
-    background-image: url(../images/iso_icon.svg);
-    width: 32px;
+  background-image: url(../images/iso_icon.svg);
+  width: 32px;
 }
 
 .components li:nth-child(4)::before {
-    background-image: url(../images/location_icon.svg);
-    width: 10px;
+  background-image: url(../images/location_icon.svg);
+  width: 10px;
 }
 
 .sunset_section {
-    background-image: url(../images/mountain_background.jpg);
-    background-size: cover;
-    height: 80vh;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+  background-image: url(../images/mountain_background.jpg);
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .banner article {
-    display: block;
-    max-width: 300px;
-    margin-right: 87px;
+  display: block;
+  max-width: 300px;
+  margin-right: 87px;
 }
 
-
 .banner h3 {
-    font-size: 14px;
-    color: white;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .banner p {
-    font-size: 14px;
-    color: #C0C0C0;
-    line-height: 20px
+  font-size: 14px;
+  color: #c0c0c0;
+  line-height: 20px;
 }
 
 .monstera_section {
-    background-image: url(../images/leaves_background.jpg);
-    background-size: cover;
-    height: 80vh;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+  background-image: url(../images/leaves_background.jpg);
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .star_section {
-    background-image: url(../images/himalayas_backgroud.jpg);
-    background-size: cover;
-    height: 80vh;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+  background-image: url(../images/himalayas_backgroud.jpg);
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .past_clients_section {
-    background-color: #000000;
-    padding: 113px 0 140px;
-    text-align: center;
+  background-color: #000000;
+  padding: 113px 0 140px;
+  text-align: center;
 }
 
 .past_clients_section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .partners_logo {
-    width: 128px;
+  width: 128px;
 }
 
 .past_clients_section h3 {
-    font-size: 40px;
-    line-height: 42px; 
-    color: #FFFFFF;
-    margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .past_clients_section h4 {
-    font-size: 24px;
-    line-height: 30px;
-    color: #C0C0C0;
-    margin-bottom: 111px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #c0c0c0;
+  margin-bottom: 111px;
 }
 
 .need_help_section {
-    background-color: #000000;
-    text-align: center;
-    padding-top: 113px;
-    padding-bottom: 108px;
+  background-color: #000000;
+  text-align: center;
+  padding-top: 113px;
+  padding-bottom: 108px;
 }
 
 .need_help_section h3 {
-    font-size: 40px;
-    line-height: 42px;
-    color: #FFFFFF;
-    margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .need_help_section h4 {
-    font-size: 24px;
-    line-height: 30px;
-    color: #C0C0C0;
-    margin-bottom: 22px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #c0c0c0;
+  margin-bottom: 22px;
 }
 
 .need_help_section p {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.4px;
-    background-color: #FFFFFF;
-    border-radius: 14px;
-    display: inline-block;
-    padding-bottom: 10px;
-    padding-left: 11px;
-    padding-right: 11px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 .need_help_section p a {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
 
 .need_help_section p::before {
-    content: "";
-    display: inline-block;
-    background-image: url(../images/circle.svg); 
-    height: 32px;
-    width: 32px;
-    margin-right: 5px;
-    position: relative;
-    top: 8px;
- }
+  content: "";
+  display: inline-block;
+  background-image: url(../images/circle.svg);
+  height: 32px;
+  width: 32px;
+  margin-right: 5px;
+  position: relative;
+  top: 8px;
+}

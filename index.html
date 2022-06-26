@@ -8,31 +8,57 @@
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/owl.theme.default.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="logo">
+    <header class="cd-header">
+      <div class="header-wrapper">
+        <div class="logo-wrap">
           <a href="#"><img src="images/aperture_logo.svg" alt="logo" /></a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">Business areas</a></li>
-            <li><a href="#">Featured images</a></li>
-            <li><a href="#">Gear cage</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Get template</a></li>
+        <div class="nav-but-wrap">
+          <div class="menu-icon hover-target">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav__content">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="#" class="hover-target">Business areas</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="hover-target">Featured images</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="hover-target">Gear cage</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="hover-target">Contact</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="hover-target">Get template</a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
+
+    <div class="cursor2" id="cursor2"></div>
+    <div class="cursor3" id="cursor3"></div>
 
     <section class="main_banner">
       <div class="container">
         <h3>Photographer & Filmmaker</h3>
-        <h1>Aperture Studios</h1>
+        <h1 class="animate__animated animate__lightSpeedInLeft">
+          Aperture Studios
+        </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique. Duis cursus, mi quis viverra
@@ -150,7 +176,15 @@
         or videography?
       </h3>
       <h4>We're here for you!</h4>
-      <p><a href="#">Get in touch</a></p>
+      <p
+        class="wow animate__pulse"
+        data-wow-duration="2s"
+        data-wow-delay="3s"
+        data-wow-offset="10"
+        data-wow-iteration="infinite"
+      >
+        <a href="#">Get in touch</a>
+      </p>
     </section>
 
     <script
@@ -158,7 +192,11 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="../Aperture/js/owl.carousel.js"></script>
-    <script src="../Aperture/js/scripts.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
