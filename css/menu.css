@@ -211,8 +211,6 @@
 .nav__list-item {
   position: relative;
   display: inline-block;
-  -webkit-transition-delay: 0.8s;
-  transition-delay: 0.8s;
   opacity: 1;
   text-align: center;
   color: #fff;
@@ -220,13 +218,6 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
-  -webkit-transform: translate(100px, 0%);
-  transform: translate(100px, 0%);
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.2s ease, transform 0.3s ease;
-  transition: opacity 0.2s ease, transform 0.3s ease,
-    -webkit-transform 0.3s ease;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -275,6 +266,14 @@
   line-height: 20px;
   letter-spacing: 0.4px;
   color: #000000;
+}
+
+@media only screen and (max-width: 820px) {
+  .nav__list-item:last-of-type a {
+    font-size: 5vh;
+    margin: 0;
+    padding: 20px 25px;
+  }
 }
 
 body.nav-active .nav__content {

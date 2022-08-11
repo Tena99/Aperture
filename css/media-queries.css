@@ -1,12 +1,16 @@
 @media only screen and (max-width: 1280px) {
   .nav__list {
-    right: 115px;
+    right: 0;
+  }
+
+  .logo-wrap {
+    left: -30px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .main_banner {
-    height: 75vh;
+    min-height: 75vh;
   }
 
   .banner article {
@@ -46,17 +50,13 @@
     height: 24px;
     width: 24px;
   }
-
-  .logo-wrap {
-    left: -30px;
-  }
 }
 @media only screen and (max-width: 992px) {
   .nav__list-item a {
     margin-right: 15px;
   }
 
-  .main_banner h1 {
+  /* .main_banner h1 {
     font-size: 42px;
     margin-bottom: 15px;
   }
@@ -67,7 +67,7 @@
 
   .main_banner p {
     font-size: 12px;
-  }
+  } */
 
   .partners_logo {
     width: 110px;
@@ -75,28 +75,6 @@
 }
 
 @media only screen and (max-width: 820px) {
-  header {
-    padding: 20px 0;
-  }
-
-  .nav__list {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    right: 0;
-  }
-
-  .nav__list-item:first-of-type {
-    margin: 0;
-    font-size: 5vh;
-  }
-
-  .nav__list-item:last-of-type a {
-    margin: 0;
-    font-size: 5vh;
-    padding: 33px 38px;
-  }
-
   .nav-but-wrap {
     display: flex;
     justify-content: end;
@@ -133,7 +111,7 @@
     top: 10px;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 428px) {
   .nav__list-item {
     font-size: 3vh;
   }
@@ -143,16 +121,16 @@
   }
   .nav__list-item:last-of-type a {
     font-size: 3vh;
-    padding: 21px 29px;
+    padding: 13px 22px;
   }
 
   .logo-wrap {
     top: 10px;
   }
 
-  .main_banner p {
+  /* .main_banner p {
     margin: 0 10px 20px 10px;
-  }
+  } */
 
   .need_help_section h3 {
     font-size: 24px;
@@ -167,13 +145,13 @@
   }
 }
 @media only screen and (max-width: 375px) {
-  .main_banner h1 {
+  /* .main_banner h1 {
     font-size: 36px;
   }
 
   .main_banner h3 {
     font-size: 10px;
-  }
+  } */
 
   .components {
     bottom: 15px;
@@ -212,7 +190,7 @@
   }
 }
 @media only screen and (max-width: 320px) {
-  .main_banner h1 {
+  /* .main_banner h1 {
     margin: 0 15px;
     line-height: normal;
     line-height: 50px;
@@ -220,7 +198,7 @@
 
   .main_banner p {
     margin: 0 15px 20px 15px;
-  }
+  } */
   .banner article {
     margin: 0 15px;
   }
