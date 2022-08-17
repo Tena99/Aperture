@@ -1,8 +1,14 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Imports                                  */
+/* -------------------------------------------------------------------------- */
 @import url(../css/owl.carousel.css);
 @import url(../css/owl.theme.default.css);
 @import url(../css/normalize.css);
 @import url(../css/menu.css);
 @import url(../css/animate.css);
+/* -------------------------------------------------------------------------- */
+/*                                    Fonts                                   */
+/* -------------------------------------------------------------------------- */
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.eot");
@@ -11,6 +17,12 @@
   font-style: normal;
   font-display: swap;
 }
+/* -------------------------------------------------------------------------- */
+/*                                   Mixins                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Global                                   */
+/* -------------------------------------------------------------------------- */
 * {
   margin: 0px;
   padding: 0px;
@@ -26,6 +38,9 @@
   flex-wrap: wrap;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
 .nav-active {
   overflow: hidden;
 }
@@ -67,6 +82,9 @@ header .nav__list {
   top: 30px;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                 Main banner                                */
+/* -------------------------------------------------------------------------- */
 .background {
   position: absolute;
   top: 0;
@@ -190,153 +208,9 @@ header .nav__list {
   width: 10px;
 }
 
-.sunset_section {
-  height: 80vh;
-  position: relative;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.banner {
-  position: relative;
-  z-index: 2;
-}
-
-.banner article {
-  display: block;
-  max-width: 300px;
-  margin-right: 87px;
-}
-
-.banner h3 {
-  font-size: 14px;
-  color: white;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.banner p {
-  font-size: 14px;
-  color: #c0c0c0;
-  line-height: 20px;
-}
-
-.monstera_section {
-  height: 80vh;
-  position: relative;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.star_section {
-  height: 80vh;
-  position: relative;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.past_clients_section {
-  background-color: #000000;
-  padding: 113px 0 140px;
-  text-align: center;
-}
-
-.past_clients_section .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.partners_logo {
-  width: 128px;
-}
-
-.past_clients_section h3 {
-  font-size: 40px;
-  line-height: 42px;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-.past_clients_section h4 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #c0c0c0;
-  margin-bottom: 111px;
-}
-
-.need_help_section {
-  background-color: #000000;
-  text-align: center;
-  padding-top: 113px;
-  padding-bottom: 108px;
-}
-
-.need_help_section h3 {
-  font-size: 40px;
-  line-height: 42px;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-.need_help_section h4 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #c0c0c0;
-  margin-bottom: 22px;
-}
-
-.need_help_section p,
-.wwd_btn p {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.4px;
-  background-color: #ffffff;
-  border-radius: 14px;
-  display: inline-flex;
-  padding-bottom: 8px;
-  padding-left: 11px;
-  padding-right: 11px;
-  padding-top: 10px;
-  align-items: center;
-}
-@media screen and (max-width: 375px) {
-  .need_help_section p,
-.wwd_btn p {
-    font-size: 14px;
-  }
-}
-
-.need_help_section p a,
-.wwd_btn p a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.need_help_section p::before,
-.wwd_btn p::before {
-  content: "";
-  display: inline-block;
-  background-image: url(../images/circle.svg);
-  height: 32px;
-  width: 32px;
-  margin-right: 5px;
-  position: relative;
-  top: 0;
-  border-radius: 20%;
-}
-@media screen and (max-width: 375px) {
-  .need_help_section p::before,
-.wwd_btn p::before {
-    height: 28px;
-    width: 28px;
-  }
-}
-
+/* -------------------------------------------------------------------------- */
+/*                             What we do section                             */
+/* -------------------------------------------------------------------------- */
 .what_we_do_section {
   padding-top: 113px;
   padding-bottom: 100px;
@@ -455,4 +329,294 @@ header .nav__list {
 .what_we_do_section .wwd_body .wwd_btn:hover {
   transform: scale(1.1);
   transition: 3s;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Sunset section                               */
+/* -------------------------------------------------------------------------- */
+.sunset_section {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.banner {
+  position: relative;
+  z-index: 2;
+}
+
+.banner article {
+  display: block;
+  max-width: 300px;
+  margin-right: 87px;
+}
+
+.banner h3 {
+  font-size: 14px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.banner p {
+  font-size: 14px;
+  color: #c0c0c0;
+  line-height: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Our tools section                             */
+/* -------------------------------------------------------------------------- */
+.our_tools_section {
+  background-color: #000000;
+}
+.our_tools_section .tools_body {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 920px) {
+  .our_tools_section .tools_body {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+}
+.our_tools_section .tools_text {
+  flex: 1 0 45%;
+  margin-left: 100px;
+}
+@media screen and (max-width: 920px) {
+  .our_tools_section .tools_text {
+    order: 2;
+    max-width: 700px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .our_tools_section .tools_text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .our_tools_section .tools_text {
+    padding-bottom: 30px;
+  }
+}
+.our_tools_section .tools_text h4 {
+  font-size: 14px;
+  line-height: 142.8571428571%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c0c0c0;
+  margin-bottom: 6px;
+}
+@media screen and (max-width: 428px) {
+  .our_tools_section .tools_text h4 {
+    font-size: 12px;
+  }
+}
+.our_tools_section .tools_text h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 114.2857142857%;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 428px) {
+  .our_tools_section .tools_text h3 {
+    font-size: 24px;
+  }
+}
+.our_tools_section .tools_text p {
+  font-size: 14px;
+  line-height: 142.8571428571%;
+  color: #ffffff;
+  margin-bottom: 20px;
+  max-width: 514px;
+}
+@media screen and (max-width: 1200px) {
+  .our_tools_section .tools_text p {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .our_tools_section .tools_text p {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 428px) {
+  .our_tools_section .tools_text p {
+    font-size: 12px;
+  }
+}
+.our_tools_section .tools_text .btn p {
+  font-size: 16px;
+}
+.our_tools_section .tools_text .btn p::before {
+  height: 24px;
+  width: 24px;
+}
+@media screen and (max-width: 428px) {
+  .our_tools_section .tools_text .btn p a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .our_tools_section .components {
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .our_tools_section .components {
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 920px) {
+  .our_tools_section .tools_background {
+    order: 1;
+    margin-bottom: 50px;
+  }
+}
+.our_tools_section .tools_background img {
+  display: block;
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Monstera section                              */
+/* -------------------------------------------------------------------------- */
+.monstera_section {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Star section                                */
+/* -------------------------------------------------------------------------- */
+.star_section {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Past clients section                            */
+/* -------------------------------------------------------------------------- */
+.past_clients_section {
+  background-color: #000000;
+  padding: 113px 0 140px;
+  text-align: center;
+}
+
+.past_clients_section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partners_logo {
+  width: 128px;
+}
+
+.past_clients_section h3 {
+  font-size: 40px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.past_clients_section h4 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #c0c0c0;
+  margin-bottom: 111px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Need help section                             */
+/* -------------------------------------------------------------------------- */
+.need_help_section {
+  background-color: #000000;
+  text-align: center;
+  padding-top: 113px;
+  padding-bottom: 108px;
+}
+
+.need_help_section h3 {
+  font-size: 40px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.need_help_section h4 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #c0c0c0;
+  margin-bottom: 22px;
+}
+
+.need_help_section p,
+.wwd_btn p,
+.btn p {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  display: inline-flex;
+  padding-bottom: 8px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 10px;
+  align-items: center;
+}
+@media screen and (max-width: 375px) {
+  .need_help_section p,
+.wwd_btn p,
+.btn p {
+    font-size: 14px;
+  }
+}
+
+.need_help_section p a,
+.wwd_btn p a,
+.btn a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.need_help_section p::before,
+.wwd_btn p::before,
+.btn p::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/circle.svg);
+  height: 32px;
+  width: 32px;
+  margin-right: 5px;
+  position: relative;
+  top: 0;
+  border-radius: 20%;
+}
+@media screen and (max-width: 375px) {
+  .need_help_section p::before,
+.wwd_btn p::before,
+.btn p::before {
+    height: 28px;
+    width: 28px;
+  }
 }
