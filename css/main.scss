@@ -658,6 +658,10 @@ footer {
     display: flex;
     padding-bottom: 36px;
 
+    @include max-screen(490px) {
+      flex-wrap: wrap;
+    }
+
     .logo {
       max-width: 128px;
       margin-bottom: 20px;
@@ -670,6 +674,17 @@ footer {
 
     article {
       flex: 0 1 60%;
+      margin-right: 20px;
+
+      @include max-screen(767px) {
+        flex: 0 1 50%;
+      }
+
+      @include max-screen(490px) {
+        flex: 0 1 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
 
       p {
         font-size: 13px;
@@ -680,6 +695,20 @@ footer {
 
     .footer_list {
       flex: 0 1 20%;
+
+      @include max-screen(767px) {
+        flex: 0 1 25%;
+        flex-wrap: wrap;
+      }
+
+      @include max-screen(490px) {
+        flex: 0 1 45%;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 25px;
+      }
+
       ul {
         li {
           list-style: none;
@@ -715,8 +744,20 @@ footer {
       display: flex;
       padding: 36px 0;
 
+      @include max-screen(920px) {
+        flex-wrap: wrap;
+      }
+
       article {
         flex: 0 1 60%;
+
+        @include max-screen(920px) {
+          margin-bottom: 20px;
+        }
+
+        @include max-screen(500px) {
+          flex: 0 1 100%;
+        }
 
         h4 {
           font-size: 14px;
@@ -737,6 +778,10 @@ footer {
         flex: 0 1 40%;
         position: relative;
 
+        @include max-screen(500px) {
+          flex: 0 1 100%;
+        }
+
         input {
           background: #f9fafb;
           border: 1px solid #e5e7eb;
@@ -745,6 +790,11 @@ footer {
           height: 100%;
           padding: 11px 10px;
           box-sizing: border-box;
+          min-width: 355px;
+
+          @include max-screen(500px) {
+            min-width: max-content;
+          }
         }
 
         .subscribe_btn {
@@ -770,13 +820,36 @@ footer {
     display: flex;
     justify-content: space-between;
 
+    @include max-screen(375px) {
+      flex-wrap: wrap;
+      padding-top: 20px;
+    }
+
     p {
       font-size: 14px;
       line-height: calc(20 / 14 * 100%);
       color: #c0c0c0;
     }
 
+    .footer_text {
+      flex: 0 1 70%;
+
+      @include max-screen(428px) {
+        flex: 0 1 50%;
+      }
+
+      @include max-screen(375px) {
+        flex: 0 1 100%;
+        order: 2;
+      }
+    }
+
     .footer_icons {
+      @include max-screen(375px) {
+        order: 1;
+        margin-bottom: 20px;
+      }
+
       a {
         display: inline-block;
 
